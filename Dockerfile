@@ -20,4 +20,4 @@ WORKDIR /root
 
 # JDK INSTALLATION ENDS
 
-CMD("bash")
+CMD("/bin/bash")
