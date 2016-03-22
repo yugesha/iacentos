@@ -1,6 +1,8 @@
 FROM centos/postgresql-94-centos7
 MAINTAINER Yugesh yugesh.a@tcs.com
 
+USER root 
+
 RUN sudo apt-get update -y && sudo apt-get upgrade --fix-missing -y && \
 	sudo apt-get install software-properties-common -y && \
 	sudo add-apt-repository ppa:webupd8team/java && \
