@@ -19,5 +19,6 @@ ENV HOME /root
 WORKDIR /root
 
 # JDK INSTALLATION ENDS
+EXPOSE 5432 
 
-CMD("/bin/bash")
+CMD ["/bin/bash", "/start_postgres.sh"]
